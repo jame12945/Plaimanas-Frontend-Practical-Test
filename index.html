@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plaimanas Test</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <div class="language-dropdown">
+          <button class="dropbtn" id="lang-btn">TH - THB ▾</button>
+
+          <div class="dropdown-content" id="lang-dropdown">
+            <a href="#" onclick="changeLang('US - USD')">US - USD</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <div class="menu-toggle" id="menu-btn">
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <nav class="nav-container" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#">WOMEN</a></li>
+          <li><a href="#">COLLECTIONS</a></li>
+
+          <li class="has-submenu">
+            <a href="javascript:void(0)" id="editorial-btn">EDITORIAL ▾</a>
+            <ul class="submenu" id="editorial-list">
+              <li><a href="#">A.S.C</a></li>
+              <li><a href="#">BAZAAR</a></li>
+              <li><a href="#">ELLE</a></li>
+              <li><a href="#">GQ</a></li>
+              <li><a href="#">L’OFFICIAL THAILAND</a></li>
+              <li><a href="#">NUMERO</a></li>
+              <li><a href="#">VOGUE</a></li>
+            </ul>
+          </li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">STORIES</a></li>
+        </ul>
+        <div class="mobile-footer-logo">PLAIMANAS</div>
+      </nav>
+
+      <div class="header-right">
+        <a href="#" class="sign-in">SIGN IN</a>
+        <a href="#" class="cart-icon">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path
+              d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+    <h1 class="hero-title" id="main-title">PLAIMANAS</h1>
+    <div class="hero-container">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/video/Lady_Post.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <main class="content-wrapper">
+      <section class="product-section">
+        <div class="product-image-container-with-overlay-text">
+          <img
+            src="assets/images/Dental_Scissors.jpg"
+            alt="NEW"
+            class="product-img"
+          />
+          <h2 class="overlay-text">NEW</h2>
+        </div>
+        <div class="product-info">
+          <h3>Sed egestas, nibh a condimentum imperdiet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+            nisl non rhoncus commodo, turpis elit ultricies justo, vitae
+            molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <div class="product-video-container">
+          <video autoplay muted loop playsinline class="product-img">
+            <source src="assets/video/Joey_Bania_Clips.mp4" type="video/mp4" />
+          </video>
+          <h2 class="overlay-text">BESTSELLER</h2>
+        </div>
+        <div class="product-info">
+          <h3>Sed egestas, nibh a condimentum imperdiet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+            nisl non rhoncus commodo, turpis elit ultricies justo, vitae
+            molestie quam justo ut lacus. Proin vitae
+          </p>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <div class="product-collection1-container hover-video">
+          <img
+            src="assets/images/Feel_Alive_Brenna_Maries.jpg"
+            class="product-img main-img"
+          />
+          <video muted loop playsinline class="product-video">
+            <source src="assets/video/Joey_Bania_Clips.mp4" type="video/mp4" />
+          </video>
+          <h2 class="overlay-text">COLLECTION 01</h2>
+        </div>
+      </section>
+
+      <div class="collection-grid">
+        <section class="product-section small">
+          <div class="product-image-container hover-swap">
+            <img src="assets/images/Teeth.jpg" class="product-img base-img" />
+            <img src="assets/images/Mist.jpg" class="product-img swap-img" />
+            <h2 class="overlay-text-collection">COLLECTION 02</h2>
+          </div>
+        </section>
+
+        <section class="product-section small">
+          <div class="product-image-container hover-swap">
+            <img src="assets/images/Mist.jpg" class="product-img base-img" />
+            <img src="assets/images/Flower.jpg" class="product-img swap-img" />
+            <h2 class="overlay-text-collection">COLLECTION 03</h2>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span
+          ><div><-</div>
+          BEST SELLING
+          <div>-></div></span
+        >
+        <span
+          >NEW ARRIVAL
+          <div><-</div></span
+        >
+        <span
+          >BEST SELLING
+          <div>-></div></span
+        >
+        <span
+          >NEW ARRIVAL
+          <div><-</div></span
+        >
+        <span
+          >BEST SELLING
+          <div>-></div></span
+        >
+        <span
+          >NEW ARRIVAL
+          <div><-</div></span
+        >
+      </div>
+    </div>
+
+    <div class="service-info-container">
+      <div class="service-item">
+        <h4>WORLDWIDE SHIPPING</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+          nisl non rhoncus commodo.
+        </p>
+      </div>
+      <div class="service-item">
+        <h4>CUSTOMER SERVICE</h4>
+        <p>
+          <u>Lorem ipsum dolor sit amet</u>, consectetur adipiscing elit. Nam
+          ornare, nisl non rhoncus commodo, turpis elit ultricies justo, vitae
+          molestie quam justo ut lacus. Proin vitae
+        </p>
+      </div>
+      <div class="service-item">
+        <h4>SECURE PAYMENT</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+          nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie
+          quam justo ut lacus. Proin vitae
+        </p>
+      </div>
+    </div>
+    <section class="faq-section">
+      <div class="faq-container">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="faq-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+          nisl non rhoncus commodo.
+        </p>
+
+        <div class="faq-categories">
+          <button class="faq-btn">ORDERS</button>
+          <button class="faq-btn active">SHIPPING</button>
+          <button class="faq-btn">RETURNS & EXCHANGES</button>
+          <button class="faq-btn">SIZING & PRODUCTS</button>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>WHAT IS YOUR RETURN POLICY?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Items can be returned within 14 days of receipt, provided they
+                are unworn, unwashed, and in original condition with tags
+                attached.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>CAN I EXCHANGE FOR A DIFFERENT SIZE?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Delivery typically takes 3-5 business days for domestic orders
+                and 7-14 days for international orders.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>ARE SALE ITEMS REFUNDABLE?</span>
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Once your order has shipped, you will receive an email with a
+                tracking number and a link to track your package.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="inquiry-section">
+      <div class="inquiry-container">
+        <div class="inquiry-text">
+          <h2>MAKE AN INQUIRY</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
+            nisl non rhoncus commodo.
+          </p>
+        </div>
+        <div class="inquiry-form">
+          <div class="form-radio-group">
+            <label
+              ><input type="radio" name="work_type" value="onsite" checked />
+              Onsite</label
+            >
+            <label
+              ><input type="radio" name="work_type" value="hybrid" />
+              Hybrid</label
+            >
+          </div>
+          <div class="form-grid">
+            <input type="text" placeholder="Full name*" />
+            <input
+              type="email"
+              placeholder="Email*"
+              value="Plaimanas@gmail.com"
+            />
+            <input type="text" placeholder="Phone Number*" />
+            <select>
+              <option value="" disabled selected>Select Subject*</option>
+              <option value="general">General Inquiry</option>
+              <option value="order">Order Status</option>
+            </select>
+          </div>
+          <div class="form-checkbox">
+            <label
+              ><input type="checkbox" /> I agree to all terms &
+              conditions</label
+            >
+          </div>
+          <button class="send-btn">SEND</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+  <footer class="main-footer">
+    <div class="footer-top">
+      <a
+        href="javascript:void(0)"
+        class="back-to-top"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >HOMEPAGE</a
+      >
+    </div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>ABOUT</h4>
+        <ul>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Editorial</a></li>
+          <li><a href="#">Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">Payment Notification</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>SOCIAL</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col newsletter">
+        <h4>NEWSLETTER</h4>
+        <input type="email" placeholder="Email" />
+        <button class="subscribe-btn">SUBSCRIBE</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copyright">©PLAIMANAS</div>
+      <div class="web-credit">Web by ::*</div>
+    </div>
+  </footer>
+</html>
